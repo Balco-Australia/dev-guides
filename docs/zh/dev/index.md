@@ -16,8 +16,12 @@
 
 ## 工程协作与自动化
 
-- [分支、Commit 与代码提交规范](/zh/dev/09-git-workflow)
-- [版本号、标签、镜像和制品追溯](/zh/dev/10-version-and-artifact-policy)
 - [CI、集成测试与 CD 流水线](/zh/dev/11-ci-cd-platform)
 - [文档即代码、知识库、模板与归档](/zh/dev/13-documentation-as-code)
 - [团队职责、规范例外、评审与更新](/zh/dev/14-team-governance)
+
+## Git 与版本管理
+
+- [Quickstart](/zh/dev/git/quickstart)
+- [分支、Commit 与代码提交规范](/zh/dev/git/09-git-workflow)
+- [版本号、标签、镜像和制品追溯](/zh/dev/git/10-version-and-artifact-policy)

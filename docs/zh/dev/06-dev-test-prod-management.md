@@ -15,7 +15,7 @@ Dev、Test、Prod 是**应用部署环境**，不能只靠 Git 分支名称区�
 ## GitHub 与 Azure 的绑定
 
 - GitHub 建立 `dev`、`test`、`prod` Environments；各自绑定允许部署的分支或标签、目标 Azure 资源与必要审批。
-- CI 执行快速质量检查；每日集成测试流水线从 `dev` 构建候选制品并在 Test 验证。通过后，CD 将同一制品部署到 Prod，不在生产环境重新构建。构建记录包含 Git 提交、运行编号和镜像或包的摘要。
+- CI 执行快速质量检查；集成测试流水线从 `main` 构建候选制品并在 Test 验证。通过后，CD 将同一制品部署到 Prod，不在生产环境重新构建。构建记录包含 Git 提交、运行编号和镜像或包的摘要。
 - 部署身份按环境分离。Dev 身份不能部署 Prod，生产身份只通过受保护的工作流使用。优先采用 GitHub OIDC 与 Azure 联合身份，减少长期密钥。[GitHub 官方指南](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-azure)说明了 Azure OIDC 与环境保护规则。
 - Prod 发布需要应用负责人批准，部署后执行健康检查和关键业务验证；失败使用上一个已验证制品回滚。
 

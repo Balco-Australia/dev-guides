@@ -14,10 +14,14 @@
 - [Shared configuration, secrets, and credentials](/dev/07-configuration-and-secrets-platform)
 - [Observability platform](/dev/08-observability-platform)
 
+## Git and Release Management
+
+- [Quickstart](/dev/git/quickstart)
+- [Branches, commits, and contributions](/dev/git/09-git-workflow)
+- [Versions, tags, and artifact traceability](/dev/git/10-version-and-artifact-policy)
+
 ## Engineering Collaboration and Automation
 
-- [Branches, commits, and contributions](/dev/09-git-workflow)
-- [Versions, tags, and artifact traceability](/dev/10-version-and-artifact-policy)
 - [CI, integration testing, and CD](/dev/11-ci-cd-platform)
 - [Documentation as code and knowledge base](/dev/13-documentation-as-code)
 - [Team responsibilities and governance](/dev/14-team-governance)

@@ -15,7 +15,7 @@ Environment configuration includes site/API addresses, Entra app registrations, 
 ## GitHub and Azure Binding
 
 - Create `dev`, `test`, and `prod` GitHub Environments. Bind each to permitted deployment branches or tags, target Azure resources, and required approvals.
-- CI runs fast quality checks. A daily integration-test pipeline builds a candidate artifact from `dev` and validates it in Test. After validation, CD deploys that same artifact to Prod without rebuilding in production. Record the Git commit, run number, and image or package digest.
+- CI runs fast quality checks. The integration-test pipeline builds a candidate artifact from `main` and validates it in Test. After validation, CD deploys that same artifact to Prod without rebuilding in production. Record the Git commit, run number, and image or package digest.
 - Separate deployment identities by environment. A Dev identity cannot deploy to Prod. Use the production identity only through protected workflows. Prefer GitHub OIDC federation with Azure to reduce long-lived secrets. The [official GitHub guide](https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-azure) describes Azure OIDC and environment protection rules.
 - The application owner approves Prod releases. Run health checks and key business validations after deployment; roll back to the previous validated artifact on failure.
 

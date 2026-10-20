@@ -1,6 +1,6 @@
 # Documentation as Code, Knowledge Base, Templates, and Archives
 
-Version, review, and publish engineering documentation alongside code. The daily build publishes documentation from `dev` to an internal preview site; formal CD publishes documentation for the released version to the formal site. Record the source commit and site URL for both publications so application and documentation versions stay aligned.
+Version, review, and publish engineering documentation alongside code. The integration-test build publishes documentation from `main` to an internal preview site; formal CD publishes documentation for the released version to the formal site. Record the source commit and site URL for both publications so application and documentation versions stay aligned.
 
 ## Document Placement and Minimum Requirements
 
@@ -20,7 +20,7 @@ Keep system-specific documents in an application's `docs/` directory and shared 
 | Stage | Documentation source | Publication destination |
 | --- | --- | --- |
 | CI | None | None |
-| Daily integration test | `dev` commit that passed CI and integration testing | Internal preview site |
+| Integration test | `main` commit that passed CI and integration testing | Internal preview site |
 | CD | Deployed release version | Formal documentation site |
 
 ## TODO
