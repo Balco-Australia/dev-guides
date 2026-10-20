@@ -71,4 +71,10 @@ git push
 
 ## 4. Open a PR to `main`
 
-In GitHub, open a PR with **base `main`** and your working branch as the compare branch. For `hotfix/*`, use its target `release/*` as the base. Link the work item; describe the change, checks run, deployment or migration impact, and rollback approach. Wait for required checks and at least one review from someone other than the author. Resolve blocking comments before merging. Delete the working branch after merge.
+In GitHub, open a PR with **base `main`** and your working branch as the compare branch. 
+
+![alt text](../../imgs/pr_1.jpg)
+
+Describe the change, checks test results, run and deployment. Wait for required checks and at least one review from someone other than the author. Delete the working branch after merge.
+
+![alt text](../../imgs/pr_2.png)
