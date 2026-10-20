@@ -36,7 +36,7 @@ cd demo-repository
 git switch -c feat/demo
 ```
 
-If `feat/demo` already exists on the remote and you want to work on it directly, clone that branch instead:
+If `feat/demo` already exists on the remote or if you have manually created a branch, clone that branch instead:
 
 ```bash
 git clone -b feat/demo https://github.com/Balco-Australia/demo-repository.git
