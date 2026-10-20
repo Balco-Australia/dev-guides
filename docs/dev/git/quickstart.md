@@ -77,4 +77,4 @@ In GitHub, open a PR with **base `main`** and your working branch as the compare
 
 Describe the change, checks test results, run and deployment. Wait for required checks and at least one review from someone other than the author. Delete the working branch after merge.
 
-![alt text](../../imgs/pr_2.png)
+![alt text](../../imgs/pr_2.jpg)
